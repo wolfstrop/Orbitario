@@ -1,0 +1,14 @@
+<div *ngIf="loading">Cargando datos del planeta...</div>
+<div *ngIf="error">{{ error }}</div>
+
+<div *ngIf="planet">
+    <h2>{{ planet.nombre }}</h2>
+    <p>{{ planet.descripcion }}</p>
+    <ul>
+        <li>Posicion X: {{ planet.x | number:'1.3-3' }}</li>
+        <li>Posicion Y: {{ planet.y | number:'1.3-3' }}</li>
+        <li>Posicion Z: {{ planet.z | number:'1.3-3' }}</li>
+    </ul>
+
+
+</div>

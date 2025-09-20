@@ -1,0 +1,25 @@
+<canvas #canvas3d class="full-screen-canvas"></canvas>
+
+
+<app-sun-mesh-component
+    [config]="sunConfig"
+    [camera]="camera"
+    (sunCreated)="onSunCreated($event)">
+</app-sun-mesh-component>
+
+<ng-container *ngFor="let cfg of getConfigs()">
+    <app-planet-mesh 
+    [config]="cfg" 
+    (meshCreated)="onMeshCreated($event)">
+    </app-planet-mesh>
+</ng-container>
+
+
+<div class="modal-backdrop" *ngIf="showDataModal" (click)="closeModal()">    
+    <div class="modal-content" (click)="$event.stopPropagation()">
+        <app-planet-data-modal 
+        [nombrePlaneta]="selectedPlanetName" 
+        (close)="closeModal()">
+        </app-planet-data-modal>
+    </div>
+</div>

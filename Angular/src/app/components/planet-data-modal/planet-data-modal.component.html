@@ -1,0 +1,15 @@
+<div class="modal-backdrop"></div>
+<div *ngIf="data" class="modal" >
+    
+    <h2>{{ data.nombre }}</h2>
+    <p>{{ data.descripcion }}</p>
+    <table>
+    <tr><th>Eje mayor</th><td>{{ data.ejeMayor }}</td></tr>
+    <tr><th>Excentricidad</th><td>{{ data.excentricidad }}</td></tr>
+    <tr><th>Inclinación</th><td>{{ data.inclinacion }}</td></tr>
+    <tr><th>Long. Nodo Asc.</th><td>{{ data.longitudNodoAsc }}</td></tr>
+    <tr><th>Arg. Periastro</th><td>{{ data.argumentoPeriastro }}</td></tr>
+    <tr><th>Período (días)</th><td>{{ data.periodoDias }}</td></tr>
+    <tr><th>Rotaciones (h)</th><td>{{ data.periodoRotacionesHora }}</td></tr>
+  </table>
+</div>
