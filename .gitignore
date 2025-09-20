@@ -1,0 +1,34 @@
+# Compilados y clases
+target/
+*.class
+
+# Logs
+*.log
+
+# Configs locales
+*.env
+application-*.yml
+application-*.properties
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+bin/
+
+# Eclipse STS
+.apt_generated
+.factorypath
+.springBeans
+.sts4-cache
+
+# VS Code
+.vscode/
+
+# Mac / Linux / Windows basura del SO
+.DS_Store
+Thumbs.db
